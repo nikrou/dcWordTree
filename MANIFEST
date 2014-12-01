@@ -1,0 +1,17 @@
+dcWordTree/BUGS
+dcWordTree/README.md
+dcWordTree/_admin.php
+dcWordTree/_install.php
+dcWordTree/_prepend.php
+dcWordTree/CHANGELOG.md
+dcWordTree/COPYING
+dcWordTree/inc/dcwordtree.behaviors.php
+dcWordTree/index.php
+dcWordTree/imgs/dcWordTree.png
+dcWordTree/_define.php
+dcWordTree/js/d3.js
+dcWordTree/js/d3.layout.cloud.js
+dcWordTree/js/dcwordtree.js
+dcWordTree/MANIFEST
+dcWordTree/_public.php
+dcWordTree/tpl/index.tpl

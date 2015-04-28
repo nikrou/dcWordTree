@@ -1,13 +1,11 @@
 <html>
   <head>
-    <title>dcWordTree</title>
+    <title><?php echo __('dcWordTree');?></title>
     <?php echo dcPage::jsPageTabs($default_tab);?>
   </head>
   <body>
-    <h2><?php echo html::escapeHTML($core->blog->name);?> &gt; dcWordTree</h2>
-    <?php if (!empty($message)):?>
-    <p class="message"><?php echo $message;?></p>
-    <?php endif;?>
+    <?php echo dcPage::breadcrumb(array(html::escapeHTML($core->blog->name) => '', __('dcWordTree') => ''));?>
+    <?php echo dcPage::notices();?>
 
     <form action="<?php echo $p_url;?>" method="post" enctype="multipart/form-data">
     <?php if ($dcwordtree_active || $is_super_admin):?>
@@ -29,12 +27,6 @@
 	<input type="submit" name="saveconfig" value="<?php echo __('Save configuration');?>" />
       </p>
     </div>
-
-    <?php if ($dcwordtree_active):?>
-    <div class="multi-part" id="configuration" title="<?php echo __('Configuration');?>">
-      <h3 class="hidden-if-js"><?php echo __('Configuration');?></h3>
-    </div>
-    <?php endif;?>
 
     <input type="hidden" name="p" value="dcWordTree"/>
     <?php echo $core->formNonce();?>

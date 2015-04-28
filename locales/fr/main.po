@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+
+msgid "Enable dcWordTree plugin"
+msgstr "Activer le plugin dcWordTree"

@@ -2,7 +2,7 @@
 // +-----------------------------------------------------------------------+
 // | dcWordTree - a plugin for dotclear                                    |
 // +-----------------------------------------------------------------------+
-// | Copyright(C) 2014 Nicolas Roudaire             http://www.nikrou.net  |
+// | Copyright(C) 2014-2015 Nicolas Roudaire        http://www.nikrou.net  |
 // +-----------------------------------------------------------------------+
 // | This program is free software; you can redistribute it and/or modify  |
 // | it under the terms of the GNU General Public License version 2 as     |
@@ -25,11 +25,11 @@ $this->registerModule(
 	/* Name */			"dcWordTree",
 	/* Description*/	"display tags in an amazing cloud",
 	/* Author */		"Nicolas Roudaire",
-	/* Version */		'0.1.0',
+	/* Version */		'0.2.0',
 	/* Permissions */	"contentadmin",
 	/* Properties */	array('type' => 'plugin',
 							  'dc_min' => '2.6',
-							  'support' => 'http://forum.dotclear.net/viewtopic.php?id=xxxx',
+							  'support' => 'http://forum.dotclear.net/viewtopic.php?pid=333019',
 							  'details' => 'http://plugins.dotaddict.org/dc2/details/dcWordTree'
     )
 );

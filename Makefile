@@ -14,7 +14,7 @@ install:
 config: clean manifest
 	mkdir -p $(DIST)/$(PLUGIN_NAME)
 	cp -pr _*.php BUGS CHANGELOG.md css imgs inc index.php \
-	js MANIFEST README.md COPYING $(DIST)/$(PLUGIN_NAME)/
+	js tpl locales MANIFEST README.md COPYING $(DIST)/$(PLUGIN_NAME)/
 	find $(DIST) -name '*~' -exec rm \{\} \;
 
 dist: config

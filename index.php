@@ -2,7 +2,7 @@
 // +-----------------------------------------------------------------------+
 // | dcWordTree - a plugin for dotclear                                    |
 // +-----------------------------------------------------------------------+
-// | Copyright(C) 2014 Nicolas Roudaire             http://www.nikrou.net  |
+// | Copyright(C) 2014-2015 Nicolas Roudaire        http://www.nikrou.net  |
 // +-----------------------------------------------------------------------+
 // | This program is free software; you can redistribute it and/or modify  |
 // | it under the terms of the GNU General Public License version 2 as     |
@@ -21,10 +21,7 @@
 
 if (!defined('DC_CONTEXT_ADMIN')) { exit; }
 
-if (!empty($_SESSION['dcwordtree_message'])) {
-    $message = $_SESSION['dcwordtree_message'];
-    unset($_SESSION['dcwordtree_message']);
-}
+$default_tab = 'settings';
 
 $is_super_admin = $core->auth->isSuperAdmin();
 $core->blog->settings->addNameSpace('dcwordtree');
@@ -44,7 +41,7 @@ if (!empty($_POST['saveconfig'])) {
             }
         }
 
-        $_SESSION['dcwordtree_message'] = __('The configuration has been updated.');
+        dcPage::addSuccessNotice(__('Configuration has been updated.'));
         http::redirect($p_url);
     } catch(Exception $e) {
         http::redirect($p_url);

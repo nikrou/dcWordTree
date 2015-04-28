@@ -2,7 +2,7 @@
 // +-----------------------------------------------------------------------+
 // | dcWordTree - a plugin for dotclear                                    |
 // +-----------------------------------------------------------------------+
-// | Copyright(C) 2014 Nicolas Roudaire             http://www.nikrou.net  |
+// | Copyright(C) 2014-2015 Nicolas Roudaire        http://www.nikrou.net  |
 // +-----------------------------------------------------------------------+
 // | This program is free software; you can redistribute it and/or modify  |
 // | it under the terms of the GNU General Public License version 2 as     |
@@ -21,10 +21,6 @@
 
 class dcWordTreeBehaviors
 {
-    public static function addTplPath($core) {
-        $core->tpl->setPath($core->tpl->getPath(), dirname(__FILE__).'/../default-templates');
-    }
-
     public static function publicHeadContent($core) {
         $res = '';
         $res .= sprintf(
